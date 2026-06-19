@@ -15,7 +15,7 @@ app.use(express.static("./public"))
 
 //POST  
 
-app.post('https://day-92-93-fullstack.onrender.com/api/notes', async (req,res)=>{
+app.post("https://day-92-93-fullstack.onrender.com/api/notes", async (req,res)=>{
     const { title , description } = req.body
 
     const note = await noteModel.create({
