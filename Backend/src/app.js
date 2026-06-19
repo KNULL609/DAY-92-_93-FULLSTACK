@@ -54,7 +54,7 @@ app.delete("https://day-92-93-fullstack.onrender.com/api/notes/:id", async(req,r
 
 // PATCH
 
-app.patch("https://day-92-93-fullstack.onrender.com//api/notes/:id", async(req,res)=>{
+app.patch("https://day-92-93-fullstack.onrender.com/api/notes/:id", async(req,res)=>{
     const id = req.params.id
     const { description } = req.body
 
