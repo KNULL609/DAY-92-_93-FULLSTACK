@@ -15,7 +15,7 @@ app.use(express.static("./public"))
 
 //POST  
 
-app.post('/api/notes', async (req,res)=>{
+app.post('https://day-92-93-fullstack.onrender.com/api/notes', async (req,res)=>{
     const { title , description } = req.body
 
     const note = await noteModel.create({
@@ -31,7 +31,7 @@ app.post('/api/notes', async (req,res)=>{
 
 //GET 
 
-app.get("/api/notes", async (req,res)=>{
+app.get("https://day-92-93-fullstack.onrender.com/api/notes", async (req,res)=>{
     const notes = await noteModel.find()
 
     res.status(200).json({
@@ -42,7 +42,7 @@ app.get("/api/notes", async (req,res)=>{
 
 // DELETE
 
-app.delete("/api/notes/:id", async(req,res)=>{
+app.delete("https://day-92-93-fullstack.onrender.com/api/notes/:id", async(req,res)=>{
     const id = req.params.id
 
     await noteModel.findByIdAndDelete(id)
@@ -54,7 +54,7 @@ app.delete("/api/notes/:id", async(req,res)=>{
 
 // PATCH
 
-app.patch("/api/notes/:id", async(req,res)=>{
+app.patch("https://day-92-93-fullstack.onrender.com/api/notes/:id", async(req,res)=>{
     const id = req.params.id
     const { description } = req.body
 
