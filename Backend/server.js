@@ -11,7 +11,7 @@ connectToDb()
 
 
 
-app.listen(3000, ()=>{
+app.listen("https://day-92-93-fullstack.onrender.com", ()=>{
     console.log("server is running on port 3000")
 })
 
